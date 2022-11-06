@@ -47,7 +47,6 @@ body {
 	padding-right: 20px;
 }
 .body-main__image {
-	transform: translate(37px, 0);
 	max-width: 435px;
 }
 .body-main__content {
@@ -75,6 +74,7 @@ body {
 	margin-bottom: 24px;
 }
 .form__line {
+	flex: 0 1 50%;
 }
 .form__label {
 	display: inline-block;
@@ -87,7 +87,7 @@ body {
 	padding: 13px 0 13px 16px;
 	border: 1px solid#D7DADD;
 	border-radius: 4px;
-	width: 340px;
+	width: 100%;
 	height: 52px;
 	color: #9a9ca5;
 	line-height: 160%;
@@ -101,6 +101,7 @@ body {
 	box-shadow: 2px 5px 30px #000;
 }
 .form__area {
+	flex: 0 1 100%;
 }
 .form__area:not(:last-child) {
 	margin-bottom: 48px;
@@ -109,11 +110,13 @@ body {
 	padding: 13px 0 13px 16px;
 	border: 1px solid#D7DADD;
 	border-radius: 4px;
-	width: 705px;
-	height: 128px;
+	width: 100%;
+	min-height: 128px;
 	box-shadow: 2px 5px 20px #000;
-
 	transition: all 0.3s ease 0s;
+	max-height: 250px;
+
+	resize: vertical;
 }
 .form__textarea:hover {
 	box-shadow: 2px 2px 20px #000;
